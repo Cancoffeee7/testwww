@@ -15,7 +15,7 @@ connect.createServer( connect.query(), function( request, response ){
 				console.log('exec error: ' + error);
 				response.end("<h1>error : shutdown</h1>")
 			} else {
-				response.end("<h1>shutdown " + time + "s" + </h1>");
+				response.end("<h1>shutdown " + time + "s" + "</h1>");
 			}
 		});
 	} else if( query.cmd === "pause" ){
